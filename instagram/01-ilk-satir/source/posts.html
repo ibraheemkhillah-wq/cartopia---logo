@@ -1,0 +1,73 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}
+body{background:#222;font-family:Poppins,sans-serif;display:flex;gap:40px;padding:40px;flex-wrap:wrap}
+.post{width:1080px;height:1350px;position:relative;overflow:hidden;color:#fff}
+.post>img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.wash{position:absolute;inset:0}
+.vig{position:absolute;inset:0}
+.eyebrow{position:absolute;left:84px;top:92px;display:flex;align-items:center;gap:14px;font-weight:600;font-size:28px;letter-spacing:.16em}
+.eyebrow svg{width:30px;height:30px}
+h1{position:absolute;left:84px;right:84px;font-weight:900;font-style:italic;line-height:.98;letter-spacing:-.01em}
+.sub{position:absolute;left:84px;right:84px;font-size:34px;font-weight:500;line-height:1.35}
+.line{position:absolute;left:0;right:0;bottom:150px;height:3px;background:rgba(255,255,255,.9)}
+.line svg{position:absolute;left:50%;top:50%;width:46px;height:46px;transform:translate(-50%,-50%)}
+.logo{position:absolute;left:50%;bottom:56px;transform:translateX(-50%);height:62px}
+.pill{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-size:30px;font-weight:600;background:rgba(255,255,255,.16);border:2px solid rgba(255,255,255,.55);backdrop-filter:blur(6px)}
+.chips{position:absolute;left:84px;right:84px;bottom:200px;display:flex;flex-wrap:wrap;gap:16px}
+.price{background:#fff;color:#1A3060;border-color:#fff;font-weight:700;font-size:38px;padding:16px 32px}
+.swipe{position:absolute;right:84px;top:92px;font-size:28px;font-weight:600;letter-spacing:.08em;display:flex;align-items:center;gap:10px}
+/* L dark */
+#L .wash{background:linear-gradient(90deg,rgba(21,42,86,.80),rgba(36,68,132,.68))}
+#L .vig{background:linear-gradient(180deg,rgba(14,28,60,.85) 0%,rgba(14,28,60,0) 38%,rgba(14,28,60,0) 55%,rgba(14,28,60,.9) 100%)}
+#L img.bg{object-position:50% 20%;filter:saturate(.75)}
+/* M light */
+#M .wash{background:linear-gradient(90deg,rgba(46,90,166,.62),rgba(79,134,230,.5));-webkit-mask-image:radial-gradient(ellipse 62% 40% at 50% 60%,transparent 35%,#000 85%)}
+#M .vig{background:linear-gradient(180deg,rgba(0,0,0,0) 80%,rgba(46,90,166,.95) 92%),linear-gradient(90deg,rgba(46,90,166,.22),rgba(79,134,230,.12))}
+#M img.car{position:absolute;left:0;top:440px;width:1080px;height:auto;-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 34%,#000 86%,transparent 100%)}
+#M .wash{display:none}
+/* R lighter */
+#R{color:#0E1E44}
+#R .wash{background:linear-gradient(90deg,rgba(150,190,250,.58),rgba(232,240,254,.72))}
+#R .vig{background:linear-gradient(180deg,rgba(236,243,255,.92) 0%,rgba(236,243,255,.35) 42%,rgba(236,243,255,.2) 60%,rgba(236,243,255,.9) 100%)}
+#R img.bg{object-position:45% 50%;filter:saturate(.8) brightness(1.05) blur(5px);transform:scale(1.04)}
+#R .line{background:rgba(14,30,68,.75)}
+#R .big7{position:absolute;right:50px;top:60px;font-weight:900;font-style:italic;font-size:420px;line-height:1;color:rgba(62,106,179,.18)}
+#R img.rphoto{position:absolute;left:0;top:420px;width:1080px;height:830px;object-fit:cover;object-position:50% 45%;-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 22%,#000 82%,transparent 100%)}
+#R .pill{background:rgba(255,255,255,.6);border-color:rgba(14,30,68,.25)}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><symbol id="sp" viewBox="0 0 24 24"><path d="M12 0C12.9 6.6 17.4 11.1 24 12 17.4 12.9 12.9 17.4 12 24 11.1 17.4 6.6 12.9 0 12 6.6 11.1 11.1 6.6 12 0Z" fill="currentColor"/></symbol></svg>
+
+<div class="post" id="L">
+  <img class="bg" src="emp_hq.jpg"><div class="wash"></div><div class="vig"></div>
+  <div class="eyebrow"><svg><use href="#sp"/></svg>ŞEFFAF RAPOR</div>
+  <div class="swipe">KAYDIR <span style="font-size:40px">→</span></div>
+  <h1 style="top:760px;font-size:104px">Değişensiz,<br>Tramersiz,<br>Boyasız.</h1>
+  <div class="sub" style="top:1100px;font-size:40px;font-weight:600">Ne demek? Kısaca anlattık.</div>
+  <div class="line"><svg style="color:#fff"><use href="#sp"/></svg></div>
+  <img class="logo" src="logo_white.png">
+</div>
+
+<div class="post" id="M">
+  <div style="position:absolute;inset:0;background:linear-gradient(90deg,#2E5AA6,#4F86E6)"></div><img class="car" src="h_34b_hq.jpg"><div class="wash"></div><div class="vig"></div>
+  <div class="eyebrow"><svg><use href="#sp"/></svg>VİTRİNDE</div>
+  <div class="swipe">KAYDIR <span style="font-size:40px">→</span></div>
+  <h1 style="top:170px;font-size:118px">2023<br>Honda ZR-V</h1>
+  <div class="sub" style="top:430px;font-size:36px;font-weight:600">Hibrit · Otomatik · PPF Kaplamalı</div>
+  <div class="chips" style="top:510px;bottom:auto"><span class="pill">29.500 km</span><span class="pill">Değişensiz</span><span class="pill">Tramersiz</span></div><div class="chips" style="top:618px;bottom:auto"><span class="pill price">2.970.000 TL</span></div>
+  <div class="line"><svg style="color:#fff"><use href="#sp"/></svg></div>
+  <img class="logo" src="logo_white.png">
+</div>
+
+<div class="post" id="R">
+  <div style="position:absolute;inset:0;background:linear-gradient(90deg,#9DBEF7,#E3EDFD)"></div>
+  <img class="rphoto" src="d_laptop.jpg">
+  <div class="big7">7</div>
+  <div class="eyebrow" style="color:#3E6AB3"><svg><use href="#sp"/></svg><span style="color:#0E1E44">CARTOPIA REHBER</span></div>
+  <h1 style="top:170px;font-size:100px">İkinci El Alırken<br><span style="color:#3E6AB3">7 Altın Kural</span></h1>
+  <div class="chips" style="bottom:200px"><span class="pill" style="background:#fff;border-color:#fff">Kaydet, işine yarayacak</span></div>
+  <div class="line"><svg style="color:#0E1E44"><use href="#sp"/></svg></div>
+  <img class="logo" src="logo_navy.png">
+</div>
+</body></html>
